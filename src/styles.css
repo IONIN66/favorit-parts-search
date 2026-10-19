@@ -1,0 +1,54 @@
+:root {
+  --app-bg: #f5f7fa;
+  --app-accent: #4769b3;
+  --app-table-heading: #64748b;
+}
+[data-bs-theme='dark'] {
+  --app-bg: #111827;
+  --app-accent: #a8bfff;
+  --app-table-heading: #aab6c8;
+}
+body {
+  background: var(--app-bg);
+  color: var(--bs-body-color);
+  min-height: 100vh;
+}
+.container {
+  max-width: 1050px;
+}
+.card {
+  border-radius: 1rem;
+}
+.step-label,
+.eyebrow {
+  color: var(--app-accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.form-control:focus {
+  border-color: #6085d3;
+  box-shadow: 0 0 0 0.2rem #6085d326;
+}
+.table th {
+  color: var(--app-table-heading);
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.theme-control {
+  min-width: 150px;
+}
+[data-bs-theme='dark'] .shadow-sm {
+  box-shadow: 0 0.125rem 0.5rem #0005 !important;
+}
+@media (max-width: 576px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .card {
+    padding: 1.25rem !important;
+  }
+}
