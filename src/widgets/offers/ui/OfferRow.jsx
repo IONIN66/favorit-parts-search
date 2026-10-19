@@ -1,4 +1,4 @@
-const priceFormatter = new Intl.NumberFormat('ru-RU', { style: 'currency', currency: 'RUB' });
+const priceFormatter = new Intl.NumberFormat('ru-RU', { maximumFractionDigits: 10 });
 
 export const OfferRow = (props) => {
   const { offer } = props;
